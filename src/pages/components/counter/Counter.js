@@ -12,7 +12,7 @@ export default function Counter(props) {
 
   const timerFunction = useCallback(() => {
     let start = 0;
-    const frameDuration = 1000 / 60;
+    const frameDuration = duration / 60;
     const totalFrames = Math.round(duration / frameDuration);
     const timer = setInterval(() => {
       start += 1;
