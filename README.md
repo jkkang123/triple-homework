@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# 프로젝트 실행방법
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+터미널(powershell || nodejs || cmd)을 프로젝트 루트 폴더로 이동한뒤 해당 터미널에 npm install을 입력하여 npm에서 프로젝트에 필요한 라이브러리들을 다운받습니다.
 
-## Available Scripts
+다운로드가 완료되면 그 뒤 터미널에 npm start를 입력하게 된다면 node서버에서 프로젝트를 실행하고 브라우저(크롬)에서 url을 http://localhost:3000 로 이동하면 프로젝트가 실행이 완료됩니다.
 
-In the project directory, you can run:
+# 사용한 기술
 
-### `npm start`
+## Couter Easing 함수
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Counter는 숫자가 올라가는 애니메이션을 구현한 함수입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+해당 함수는 2초동안 증가하고 2초가 끝나는 동시에 목표 숫자에 도달합니다.
 
-### `npm test`
+과제에서 요구하는건 숫자가 2초동안 증가하다가 서서히 증가속도가 느려지는 효과를 구현해야 했기에
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+지연함수 (easing function) 공식을 이용해서 해당 카운터값이 목표치에 도달하면 증가속도가 느려지도록 구현을 하였습니다.
 
-### `npm run build`
+## CSS keyframes fadeInup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+각각 컴포넌트들은 100ms 단위를 가지고 차례대로 나타내지는 동작이 필요하다고 요구하고있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+이것을 표현하기위해서는 해당 컴포넌트 CSS 선택자에 keyframe fadeInUp 을 적용하고 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+각각의 컴포넌트의 delay값을 100ms 차이날 수 있게 적용하여 애니메이션을 구현하였습니다.
