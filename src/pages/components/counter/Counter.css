@@ -1,8 +1,10 @@
 .count {
-    font-size: 30px;
+    font-size: 36px;
     color: rgb(58, 58, 58);
     font-family: sans-serif;
     margin-bottom: 20px;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 
 .count .count-number-label {
